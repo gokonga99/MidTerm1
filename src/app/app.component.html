@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<div *ngFor="let user of data">
+   <ul *ngIf="user.age>20">
+      <li>{{user.firstname}}</li>
+      <li>{{user.lastname}}</li>
+      <li>{{user.age}}</li>
+  </ul> 
+</div>
+<app-user [inputUser]="User" (newEmitter)="eventcatcher($event)" ></app-user>
+
+<div *ngFor="let user of childuser">
+    <ul>
+        <li>{{user.id}}</li>
+        <li>{{user.FirstName}}</li>
+        <li>{{user.Lastname}}</li>
+        <li>{{user.DateOfBirth}}</li>
+        <li>{{user.PhoneNumber}}</li>
+        <li>{{user.Email}}</li>
+
+    </ul>
+</div>

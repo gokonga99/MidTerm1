@@ -1,0 +1,15 @@
+<p>Child launched</p>
+
+<h1 >Array from parent component</h1>
+<div *ngFor="let user of inputUser">
+    <ul>
+        <li>{{user.id}}</li>
+        <li>{{user.FirstName}}</li>
+        <li>{{user.Lastname}}</li>
+        <li>{{user.DateOfBirth}}</li>
+        <li>{{user.PhoneNumber}}</li>
+        <li>{{user.Email}}</li>
+
+    </ul>
+</div>
+<button type="button" click="editUser(childuser)">send data to parent</button>
